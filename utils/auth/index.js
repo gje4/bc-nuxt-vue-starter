@@ -85,7 +85,6 @@ export const getCartCheckoutRedirectUrl = (url) => {
     return loginUrl;
   }
 };
-console.log("token", process.env.storeFrontApiToken)
 export const bigCommerce = axios.create({
   baseURL: `${process.env.baseUrl}`,
   headers: {
