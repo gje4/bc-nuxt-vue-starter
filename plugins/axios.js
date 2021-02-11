@@ -7,6 +7,8 @@ export default function (context) {
   } = context;
   $axios.onRequest((config) => {
     console.log('Making request to ' + `: ${config.baseURL}${config.url}`);
+    console.log('Making request to ' + `: ${config.baseURL}${config.url}`);
+
     if (
       !config.url.startsWith('http://') &&
       !config.url.startsWith('https://') &&
